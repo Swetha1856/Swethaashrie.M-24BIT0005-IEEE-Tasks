@@ -25,7 +25,7 @@ w=int(input("Enter waiting time: "))
 cache.set(k,v,t)
 print("Value before waiting: ")
 print(cache.get(k))
-time.sleep(w)#waits for 6 seconds so a expires
+time.sleep(w)#waits for w seconds so a expires
 res=cache.get(k)
 if res is None:
     print("Key is expired")
